@@ -28,4 +28,12 @@ Rails.application.routes.draw do
   
   # マイクロポスト
   resources :microposts, only: [:create, :destroy]
+  
+  # 統計情報
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+  resources :relationships, only: [:create, :destroy]
 end

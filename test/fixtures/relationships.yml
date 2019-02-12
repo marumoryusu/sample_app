@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  follower: michael
+  followed: lana
+  
+tow:
+  follower: michael
+  followed: melory
+  
+three:
+  follower: lana
+  followed: michael
+  
+three:
+  follower: archer
+  followed: michael
+  
